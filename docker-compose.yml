@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+    postgres:
+        image: postgres:12.2
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_USER: sql_test
+            POSTGRES_PASSWORD: sql_test
+        restart: always
